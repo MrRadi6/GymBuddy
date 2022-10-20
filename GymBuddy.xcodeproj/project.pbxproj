@@ -56,15 +56,31 @@
 		522D0FB2290188C600A52D85 /* GymBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				522D0FB3290188C600A52D85 /* AppDelegate.swift */,
-				522D0FB5290188C600A52D85 /* SceneDelegate.swift */,
+				522D0FC829019EEA00A52D85 /* AppDelegate */,
 				522D0FB7290188C600A52D85 /* ViewController.swift */,
 				522D0FB9290188C600A52D85 /* Main.storyboard */,
-				522D0FBC290188C800A52D85 /* Assets.xcassets */,
-				522D0FBE290188C800A52D85 /* LaunchScreen.storyboard */,
+				522D0FC729019E9C00A52D85 /* Resources */,
 				522D0FC1290188C800A52D85 /* Info.plist */,
 			);
 			path = GymBuddy;
+			sourceTree = "<group>";
+		};
+		522D0FC729019E9C00A52D85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				522D0FBC290188C800A52D85 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		522D0FC829019EEA00A52D85 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				522D0FB3290188C600A52D85 /* AppDelegate.swift */,
+				522D0FB5290188C600A52D85 /* SceneDelegate.swift */,
+				522D0FBE290188C800A52D85 /* LaunchScreen.storyboard */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
