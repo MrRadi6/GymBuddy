@@ -12,6 +12,7 @@ protocol ListOfExercisesViewModelProtocol: BaseViewModel {
     var exercisesPublisher: Published<[Exercise]>.Publisher { get }
     func loadExercises()
     func reloadExercises()
+    func getExcerciseId(at index: Int) -> Int
 }
 
 class ListOfExercisesViewModel: BaseViewModel {
@@ -55,5 +56,9 @@ extension ListOfExercisesViewModel: ListOfExercisesViewModelProtocol  {
 
     func reloadExercises() {
         getExercises(showLoading: false)
+    }
+
+    func getExcerciseId(at index: Int) -> Int {
+        exercises[index].id
     }
 }

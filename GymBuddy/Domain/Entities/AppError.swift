@@ -11,3 +11,5 @@ struct AppError: Error {
     var title: String?
     var message: String
 }
+
+extension AppError: Equatable {}

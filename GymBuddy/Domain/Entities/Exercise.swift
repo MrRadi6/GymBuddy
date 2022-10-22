@@ -12,3 +12,5 @@ struct Exercise {
     let name: String
     var image: String?
 }
+
+extension Exercise: Equatable {}

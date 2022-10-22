@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D3E176385AD16D6AC5D804 /* libPods-GymBuddyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9D0CE24C5AF89098C960EA /* libPods-GymBuddyTests.a */; };
 		522D0FB4290188C600A52D85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0FB3290188C600A52D85 /* AppDelegate.swift */; };
 		522D0FB6290188C600A52D85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0FB5290188C600A52D85 /* SceneDelegate.swift */; };
 		522D0FB8290188C600A52D85 /* ListOfExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0FB7290188C600A52D85 /* ListOfExercisesViewController.swift */; };
@@ -47,11 +48,26 @@
 		522F87B22904855700F99151 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F87B02904855700F99151 /* ExerciseTableViewCell.xib */; };
 		522F87B4290486BC00F99151 /* ExerciseCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87B3290486BC00F99151 /* ExerciseCellInfo.swift */; };
 		522F87B629048E4D00F99151 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87B529048E4D00F99151 /* UIEdgeInsets+Extension.swift */; };
-		5F0AE36881DFB222792D3DA2 /* Pods_GymBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389C622DF25707D9FCBB0A41 /* Pods_GymBuddy.framework */; };
+		522F87C82904A52300F99151 /* ListOfExercisesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87C72904A52300F99151 /* ListOfExercisesViewModelTests.swift */; };
+		522F87CD2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87CC2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift */; };
+		522F87CF2904AA7C00F99151 /* ExerciseDataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87CE2904AA7C00F99151 /* ExerciseDataMocks.swift */; };
+		522F87D22904B68200F99151 /* ExerciseRespositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87D12904B68200F99151 /* ExerciseRespositoryMock.swift */; };
+		522F87D52904B78F00F99151 /* ListOfExercisesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87D42904B78F00F99151 /* ListOfExercisesUseCaseTests.swift */; };
+		68600781D131C7FF99E1CCBE /* libPods-GymBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		522F87C12904A32F00F99151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522D0FA8290188C600A52D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 522D0FAF290188C600A52D85;
+			remoteInfo = GymBuddy;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		389C622DF25707D9FCBB0A41 /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F51962DAA5B27BA589F32B4 /* Pods-GymBuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddyTests.debug.xcconfig"; path = "Target Support Files/Pods-GymBuddyTests/Pods-GymBuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		522D0FB0290188C600A52D85 /* GymBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522D0FB3290188C600A52D85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		522D0FB5290188C600A52D85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +110,15 @@
 		522F87B02904855700F99151 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
 		522F87B3290486BC00F99151 /* ExerciseCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellInfo.swift; sourceTree = "<group>"; };
 		522F87B529048E4D00F99151 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
+		522F87BD2904A32F00F99151 /* GymBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		522F87C72904A52300F99151 /* ListOfExercisesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfExercisesViewModelTests.swift; sourceTree = "<group>"; };
+		522F87CC2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfExercisesUseCaseMock.swift; sourceTree = "<group>"; };
+		522F87CE2904AA7C00F99151 /* ExerciseDataMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDataMocks.swift; sourceTree = "<group>"; };
+		522F87D12904B68200F99151 /* ExerciseRespositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRespositoryMock.swift; sourceTree = "<group>"; };
+		522F87D42904B78F00F99151 /* ListOfExercisesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfExercisesUseCaseTests.swift; sourceTree = "<group>"; };
+		589458FCC3E3F41FA4ADAFD5 /* Pods-GymBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddyTests.release.xcconfig"; path = "Target Support Files/Pods-GymBuddyTests/Pods-GymBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9D0CE24C5AF89098C960EA /* libPods-GymBuddyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72766AB888E874DBB356E22 /* Pods-GymBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddy.debug.xcconfig"; path = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		FB1A760586FA50EA966795DF /* Pods-GymBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddy.release.xcconfig"; path = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +128,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0AE36881DFB222792D3DA2 /* Pods_GymBuddy.framework in Frameworks */,
+				68600781D131C7FF99E1CCBE /* libPods-GymBuddy.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522F87BA2904A32F00F99151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D3E176385AD16D6AC5D804 /* libPods-GymBuddyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +148,8 @@
 			children = (
 				D72766AB888E874DBB356E22 /* Pods-GymBuddy.debug.xcconfig */,
 				FB1A760586FA50EA966795DF /* Pods-GymBuddy.release.xcconfig */,
+				4F51962DAA5B27BA589F32B4 /* Pods-GymBuddyTests.debug.xcconfig */,
+				589458FCC3E3F41FA4ADAFD5 /* Pods-GymBuddyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -122,7 +157,8 @@
 		3ECFC5DF440294A66AE6DC40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				389C622DF25707D9FCBB0A41 /* Pods_GymBuddy.framework */,
+				A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */,
+				CF9D0CE24C5AF89098C960EA /* libPods-GymBuddyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				522D0FB2290188C600A52D85 /* GymBuddy */,
+				522F87BE2904A32F00F99151 /* GymBuddyTests */,
 				522D0FB1290188C600A52D85 /* Products */,
 				211DE5E4FC612D508B494D75 /* Pods */,
 				3ECFC5DF440294A66AE6DC40 /* Frameworks */,
@@ -141,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				522D0FB0290188C600A52D85 /* GymBuddy.app */,
+				522F87BD2904A32F00F99151 /* GymBuddyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,6 +407,66 @@
 			path = ExerciseTableViewCell;
 			sourceTree = "<group>";
 		};
+		522F87BE2904A32F00F99151 /* GymBuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				522F87C92904A57900F99151 /* Mocks */,
+				522F87D32904B77600F99151 /* UseCasesTests */,
+				522F87C62904A50900F99151 /* ListOfExercisesTests */,
+			);
+			path = GymBuddyTests;
+			sourceTree = "<group>";
+		};
+		522F87C62904A50900F99151 /* ListOfExercisesTests */ = {
+			isa = PBXGroup;
+			children = (
+				522F87C72904A52300F99151 /* ListOfExercisesViewModelTests.swift */,
+			);
+			path = ListOfExercisesTests;
+			sourceTree = "<group>";
+		};
+		522F87C92904A57900F99151 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				522F87D02904B67900F99151 /* Repositories */,
+				522F87CB2904A58D00F99151 /* UseCases */,
+				522F87CA2904A58000F99151 /* Entities */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		522F87CA2904A58000F99151 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				522F87CE2904AA7C00F99151 /* ExerciseDataMocks.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		522F87CB2904A58D00F99151 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				522F87CC2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		522F87D02904B67900F99151 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				522F87D12904B68200F99151 /* ExerciseRespositoryMock.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		522F87D32904B77600F99151 /* UseCasesTests */ = {
+			isa = PBXGroup;
+			children = (
+				522F87D42904B78F00F99151 /* ListOfExercisesUseCaseTests.swift */,
+			);
+			path = UseCasesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -380,7 +478,6 @@
 				522D0FAC290188C600A52D85 /* Sources */,
 				522D0FAD290188C600A52D85 /* Frameworks */,
 				522D0FAE290188C600A52D85 /* Resources */,
-				29088050BDD348253E5DB55A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,6 +487,25 @@
 			productName = GymBuddy;
 			productReference = 522D0FB0290188C600A52D85 /* GymBuddy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		522F87BC2904A32F00F99151 /* GymBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522F87C32904A32F00F99151 /* Build configuration list for PBXNativeTarget "GymBuddyTests" */;
+			buildPhases = (
+				764E72737C0B92412E7BB655 /* [CP] Check Pods Manifest.lock */,
+				522F87B92904A32F00F99151 /* Sources */,
+				522F87BA2904A32F00F99151 /* Frameworks */,
+				522F87BB2904A32F00F99151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				522F87C22904A32F00F99151 /* PBXTargetDependency */,
+			);
+			name = GymBuddyTests;
+			productName = GymBuddyTests;
+			productReference = 522F87BD2904A32F00F99151 /* GymBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -403,6 +519,10 @@
 				TargetAttributes = {
 					522D0FAF290188C600A52D85 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					522F87BC2904A32F00F99151 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 522D0FAF290188C600A52D85;
 					};
 				};
 			};
@@ -420,6 +540,7 @@
 			projectRoot = "";
 			targets = (
 				522D0FAF290188C600A52D85 /* GymBuddy */,
+				522F87BC2904A32F00F99151 /* GymBuddyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -438,26 +559,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		29088050BDD348253E5DB55A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
+		522F87BB2904A32F00F99151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GymBuddy/Pods-GymBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GymBuddy/Pods-GymBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GymBuddy/Pods-GymBuddy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
 		3E7A847E140B3271C067A3B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +585,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GymBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764E72737C0B92412E7BB655 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymBuddyTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -524,7 +657,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		522F87B92904A32F00F99151 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522F87D22904B68200F99151 /* ExerciseRespositoryMock.swift in Sources */,
+				522F87CD2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift in Sources */,
+				522F87CF2904AA7C00F99151 /* ExerciseDataMocks.swift in Sources */,
+				522F87D52904B78F00F99151 /* ListOfExercisesUseCaseTests.swift in Sources */,
+				522F87C82904A52300F99151 /* ListOfExercisesViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		522F87C22904A32F00F99151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 522D0FAF290188C600A52D85 /* GymBuddy */;
+			targetProxy = 522F87C12904A32F00F99151 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		522D0FB9290188C600A52D85 /* ListOfExercises.storyboard */ = {
@@ -726,6 +879,46 @@
 			};
 			name = Release;
 		};
+		522F87C42904A32F00F99151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F51962DAA5B27BA589F32B4 /* Pods-GymBuddyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52W72N842G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samir01.GymBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymBuddy";
+			};
+			name = Debug;
+		};
+		522F87C52904A32F00F99151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589458FCC3E3F41FA4ADAFD5 /* Pods-GymBuddyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52W72N842G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samir01.GymBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymBuddy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -743,6 +936,15 @@
 			buildConfigurations = (
 				522D0FC5290188C800A52D85 /* Debug */,
 				522D0FC6290188C800A52D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522F87C32904A32F00F99151 /* Build configuration list for PBXNativeTarget "GymBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522F87C42904A32F00F99151 /* Debug */,
+				522F87C52904A32F00F99151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
