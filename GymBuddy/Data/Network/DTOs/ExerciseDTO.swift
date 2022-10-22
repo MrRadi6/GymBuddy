@@ -16,6 +16,12 @@ struct ExerciseDTO: Decodable {
     let name: String
     let uuid: String
     let images: [ExerciseImageDTO]
+    
+    func toDomain() -> Exercise  {
+        return Exercise(id: id,
+                        name: name,
+                        image: images.first(where: { $0.isMain })?.image)
+    }
 }
 
 struct ExerciseImageDTO: Decodable {

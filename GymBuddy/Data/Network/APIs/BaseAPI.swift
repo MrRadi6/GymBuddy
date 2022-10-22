@@ -14,24 +14,6 @@ protocol BaseAPI {
 }
 
 extension BaseAPI {
-//    func makeRequest<T: Decodable>(with request: BaseRequest) -> AnyPublisher<T, NetworkError> {
-//        return AF.request(request)
-//            .validate()
-//            .validate(contentType: [NetworkConstants.ContentType.json])
-//            .publishDecodable(type: T.self)
-//            .value()
-//            .map { response in
-//                response.mapError { _ in
-//                    let apiError = response.data.flatMap { try? JSONDecoder().decode(APIError.self, from: $0) }
-//                    if let apiError {
-//                        return NetworkError.systemError(message: apiError.detail)
-//                    }
-//                    return NetworkError.unknown
-//                }
-//            }
-//            .receive(on: DispatchQueue.main)
-//            .eraseToAnyPublisher()
-//    }
     func makeRequest<T: Decodable>(with request: BaseRequest) -> AnyPublisher<T, NetworkError> {
         Future<T, NetworkError> { promise in
             AF.request(request)
@@ -48,12 +30,11 @@ extension BaseAPI {
                         dLog(error)
                         if let data = response.data,
                            let apiError = try? JSONDecoder().decode(APIError.self, from: data) {
-                            promise(.failure(.systemError(message: apiError.detail)))
+                            promise(.failure(.api(message: apiError.detail)))
                             return
                         }
                         promise(.failure(.unknown))
                     }
-                    
                 }
         }
         .receive(on: DispatchQueue.main)

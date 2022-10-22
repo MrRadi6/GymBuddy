@@ -11,6 +11,7 @@ import Combine
 protocol ListOfExercisesViewModelProtocol: BaseViewModel {
     var exercisesPublisher: Published<[Exercise]>.Publisher { get }
     func loadExercises()
+    func reloadExercises()
 }
 
 class ListOfExercisesViewModel: BaseViewModel {
@@ -24,14 +25,9 @@ class ListOfExercisesViewModel: BaseViewModel {
         self.useCase = useCase
         super.init()
     }
-}
 
-// MARK: - Conforming to ListOfExercisesViewModelProtocol
-extension ListOfExercisesViewModel: ListOfExercisesViewModelProtocol  {
-    var exercisesPublisher: Published<[Exercise]>.Publisher { $exercises }
-    
-    func loadExercises() {
-        isLoading = true
+    private func getExercises(showLoading: Bool) {
+        isLoading = true && showLoading
         useCase.getListOfExercises()
             .sink { [weak self] completion in
                 guard let self else { return }
@@ -46,5 +42,18 @@ extension ListOfExercisesViewModel: ListOfExercisesViewModelProtocol  {
                 self.exercises = exercises
             }
             .store(in: &storage)
+    }
+}
+
+// MARK: - Conforming to ListOfExercisesViewModelProtocol
+extension ListOfExercisesViewModel: ListOfExercisesViewModelProtocol  {
+    var exercisesPublisher: Published<[Exercise]>.Publisher { $exercises }
+    
+    func loadExercises() {
+        getExercises(showLoading: true)
+    }
+
+    func reloadExercises() {
+        getExercises(showLoading: false)
     }
 }

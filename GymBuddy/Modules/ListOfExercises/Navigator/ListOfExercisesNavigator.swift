@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct ListOfExercisesNavigator {
+
+    static func createModule() -> ListOfExercisesViewController {
+        let remoteAPI = ExerciseAPI()
+        let repository = ExerciseRespository(remote: remoteAPI)
+        let useCase = ListOfExercisesUseCase(respository: repository)
+        let viewModel = ListOfExercisesViewModel(useCase: useCase)
+        let view = ListOfExercisesViewController.instantiate(from: .ListOfExercises)
+        view.viewModel = viewModel
+        return view
+    }
+}

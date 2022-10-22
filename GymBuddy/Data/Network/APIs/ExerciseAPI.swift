@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-struct ExerciseAPI: ExerciseRequester {
+class ExerciseAPI: ExerciseRequester {
     func getListOfExercises() -> AnyPublisher<ExercisesPageDTO, NetworkError> {
         makeRequest(with: ExerciseRequest.exercises)
     }

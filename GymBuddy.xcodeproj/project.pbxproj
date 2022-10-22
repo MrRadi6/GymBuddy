@@ -43,6 +43,10 @@
 		522F87A929038DD700F99151 /* ListOfExercisesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87A829038DD700F99151 /* ListOfExercisesNavigator.swift */; };
 		522F87AB29038EB200F99151 /* ApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87AA29038EB200F99151 /* ApplicationFlow.swift */; };
 		522F87AD29039DFB00F99151 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87AC29039DFB00F99151 /* BaseViewController.swift */; };
+		522F87B12904855700F99151 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87AF2904855700F99151 /* ExerciseTableViewCell.swift */; };
+		522F87B22904855700F99151 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F87B02904855700F99151 /* ExerciseTableViewCell.xib */; };
+		522F87B4290486BC00F99151 /* ExerciseCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87B3290486BC00F99151 /* ExerciseCellInfo.swift */; };
+		522F87B629048E4D00F99151 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87B529048E4D00F99151 /* UIEdgeInsets+Extension.swift */; };
 		5F0AE36881DFB222792D3DA2 /* Pods_GymBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389C622DF25707D9FCBB0A41 /* Pods_GymBuddy.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,10 @@
 		522F87A829038DD700F99151 /* ListOfExercisesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfExercisesNavigator.swift; sourceTree = "<group>"; };
 		522F87AA29038EB200F99151 /* ApplicationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlow.swift; sourceTree = "<group>"; };
 		522F87AC29039DFB00F99151 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		522F87AF2904855700F99151 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		522F87B02904855700F99151 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
+		522F87B3290486BC00F99151 /* ExerciseCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellInfo.swift; sourceTree = "<group>"; };
+		522F87B529048E4D00F99151 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
 		D72766AB888E874DBB356E22 /* Pods-GymBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddy.debug.xcconfig"; path = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		FB1A760586FA50EA966795DF /* Pods-GymBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddy.release.xcconfig"; path = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +267,7 @@
 				522F87982903801300F99151 /* UIViewController+Extension.swift */,
 				522F879A290380B400F99151 /* UIColor+Extension.swift */,
 				522F879C2903816400F99151 /* UIImage+Extension.swift */,
+				522F87B529048E4D00F99151 /* UIEdgeInsets+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -319,6 +328,7 @@
 		522F87A0290383C100F99151 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				522F87AE2904852E00F99151 /* ExerciseTableViewCell */,
 				522D0FB7290188C600A52D85 /* ListOfExercisesViewController.swift */,
 				522D0FB9290188C600A52D85 /* ListOfExercises.storyboard */,
 			);
@@ -347,6 +357,16 @@
 				522F87A829038DD700F99151 /* ListOfExercisesNavigator.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		522F87AE2904852E00F99151 /* ExerciseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				522F87AF2904855700F99151 /* ExerciseTableViewCell.swift */,
+				522F87B02904855700F99151 /* ExerciseTableViewCell.xib */,
+				522F87B3290486BC00F99151 /* ExerciseCellInfo.swift */,
+			);
+			path = ExerciseTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +432,7 @@
 				522F875E2901ACE100F99151 /* Localizable.strings in Resources */,
 				522D0FC0290188C800A52D85 /* LaunchScreen.storyboard in Resources */,
 				522F875A2901A15F00F99151 /* Colors.xcassets in Resources */,
+				522F87B22904855700F99151 /* ExerciseTableViewCell.xib in Resources */,
 				522D0FBD290188C800A52D85 /* Assets.xcassets in Resources */,
 				522D0FBB290188C600A52D85 /* ListOfExercises.storyboard in Resources */,
 			);
@@ -468,6 +489,8 @@
 			files = (
 				522F879729037F7600F99151 /* UIView+Extension.swift in Sources */,
 				522F877829032BE200F99151 /* ExerciseRequester.swift in Sources */,
+				522F87B629048E4D00F99151 /* UIEdgeInsets+Extension.swift in Sources */,
+				522F87B4290486BC00F99151 /* ExerciseCellInfo.swift in Sources */,
 				522D0FB8290188C600A52D85 /* ListOfExercisesViewController.swift in Sources */,
 				522F87742901C81200F99151 /* String+Extension.swift in Sources */,
 				522F87AD29039DFB00F99151 /* BaseViewController.swift in Sources */,
@@ -483,6 +506,7 @@
 				522F87812903550200F99151 /* Exercise.swift in Sources */,
 				522F879129037EC800F99151 /* StoryboardInstantiable.swift in Sources */,
 				522F87A929038DD700F99151 /* ListOfExercisesNavigator.swift in Sources */,
+				522F87B12904855700F99151 /* ExerciseTableViewCell.swift in Sources */,
 				522F878E29037E7400F99151 /* UIStoryboard+Extension.swift in Sources */,
 				522F876C2901C02000F99151 /* BaseRequest.swift in Sources */,
 				522F879F290383BC00F99151 /* ListOfExercisesViewModel.swift in Sources */,

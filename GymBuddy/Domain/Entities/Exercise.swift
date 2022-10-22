@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Exercise {
+    let id: Int
+    let name: String
+    var image: String?
+}

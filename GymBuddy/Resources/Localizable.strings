@@ -5,3 +5,9 @@
   Created by Samir on 10/20/22.
   
 */
+
+"global_unkown_network_error" = "An error has been occuered!";
+"global_alert_ok" = "OK";
+
+// MARK: - List Of Exercises
+"listOfExercises_title" = "Exercises";

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "workout.jpg",
+      "filename" : "workout.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "workout@2x.jpg",
+      "filename" : "workout@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "workout@3x.jpg",
+      "filename" : "workout@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

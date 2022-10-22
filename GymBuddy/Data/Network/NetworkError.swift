@@ -13,12 +13,12 @@ struct APIError: Decodable {
 
 
 enum NetworkError: Error {
-    case systemError(message: String)
+    case api(message: String)
     case unknown
 
     var message: String {
         switch self {
-        case .systemError(let message):
+        case .api(let message):
             return message
         case .unknown:
             return "global_unkown_network_error".localized
