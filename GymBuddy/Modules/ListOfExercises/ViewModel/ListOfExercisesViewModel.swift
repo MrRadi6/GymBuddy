@@ -22,6 +22,8 @@ class ListOfExercisesViewModel: BaseViewModel {
 
     @Published var exercises: [Exercise] = []
 
+    var exercisesPublisher: Published<[Exercise]>.Publisher { $exercises }
+
     init(useCase: ListOfExercisesUseCaseProtocol) {
         self.useCase = useCase
         super.init()
@@ -48,7 +50,6 @@ class ListOfExercisesViewModel: BaseViewModel {
 
 // MARK: - Conforming to ListOfExercisesViewModelProtocol
 extension ListOfExercisesViewModel: ListOfExercisesViewModelProtocol  {
-    var exercisesPublisher: Published<[Exercise]>.Publisher { $exercises }
     
     func loadExercises() {
         getExercises(showLoading: true)

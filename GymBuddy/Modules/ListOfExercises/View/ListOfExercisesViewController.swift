@@ -125,7 +125,13 @@ extension ListOfExercisesViewController: UITableViewDataSource {
 extension ListOfExercisesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        let exerciseId = viewModel.getExcerciseId(at: indexPath.row)
-        dLog(exerciseId)
+        openExerciseDetails(for: indexPath.row)
+    }
+
+    private func openExerciseDetails(for index: Int) {
+        let exerciseId = viewModel.getExcerciseId(at: index)
+        let detailsView = ExerciseDetailsNavigator.createModule(with: exerciseId)
+        let hostingView = UIHostingController(rootView: detailsView)
+        navigationController?.pushViewController(hostingView, animated: true)
     }
 }

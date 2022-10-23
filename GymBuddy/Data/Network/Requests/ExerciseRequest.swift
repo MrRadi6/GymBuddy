@@ -10,21 +10,27 @@ import Alamofire
 
 enum ExerciseRequest: BaseRequest {
     case exercises
+    case exercise(id: Int)
 
     var method: Alamofire.HTTPMethod {
         switch self {
-        case .exercises: return .get
+        case .exercises, .exercise:
+            return .get
         }
     }
     var path: String {
         switch self {
-        case .exercises: return Path.exerciseInfo
+        case .exercises:
+            return Path.exerciseInfo
+        case .exercise(let id):
+            return Path.exerciseInfo.appending("/\(id)")
         }
     }
 
     var parameters: Alamofire.Parameters? {
         switch self {
-        case .exercises: return nil
+        case .exercises, .exercise:
+            return nil
         }
     }
 }

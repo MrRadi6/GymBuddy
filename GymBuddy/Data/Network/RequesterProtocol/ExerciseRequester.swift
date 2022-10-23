@@ -10,4 +10,5 @@ import Combine
 
 protocol ExerciseRequester {
     func getListOfExercises() -> AnyPublisher<ExercisesPageDTO, NetworkError>
+    func getExerciseDetails(with id: Int) -> AnyPublisher<ExerciseDetailsDTO, NetworkError>
 }

@@ -24,12 +24,4 @@ struct ExerciseDTO: Decodable {
     }
 }
 
-struct ExerciseImageDTO: Decodable {
-    let image: String
-    let isMain: Bool
 
-    enum CodingKeys: String, CodingKey {
-        case image = "image"
-        case isMain = "is_main"
-    }
-}

@@ -17,9 +17,7 @@ struct ListOfExercisesUseCase: ListOfExercisesUseCaseProtocol {
 
     func getListOfExercises() -> AnyPublisher<[Exercise], AppError> {
         respository.getListOfExercises()
-            .mapError { error in
-                AppError(message: error.message)
-            }
+            .mapError({ AppError(message: $0.message )})
             .eraseToAnyPublisher()
     }
 }
