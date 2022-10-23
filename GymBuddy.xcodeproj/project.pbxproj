@@ -65,6 +65,7 @@
 		5294CDBA2905C4D0002F6F24 /* ExerciseImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDB92905C4D0002F6F24 /* ExerciseImageItem.swift */; };
 		5294CDBD2905CDDC002F6F24 /* ExerciseVariationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDBC2905CDDC002F6F24 /* ExerciseVariationsView.swift */; };
 		5294CDBF2905CE1E002F6F24 /* ExerciseVariationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */; };
+		5294CDC12905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDC02905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift */; };
 		68600781D131C7FF99E1CCBE /* libPods-GymBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,7 @@
 		5294CDB92905C4D0002F6F24 /* ExerciseImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImageItem.swift; sourceTree = "<group>"; };
 		5294CDBC2905CDDC002F6F24 /* ExerciseVariationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationsView.swift; sourceTree = "<group>"; };
 		5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationItem.swift; sourceTree = "<group>"; };
+		5294CDC02905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsUseCaseTests.swift; sourceTree = "<group>"; };
 		589458FCC3E3F41FA4ADAFD5 /* Pods-GymBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddyTests.release.xcconfig"; path = "Target Support Files/Pods-GymBuddyTests/Pods-GymBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9D0CE24C5AF89098C960EA /* libPods-GymBuddyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -493,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				522F87D42904B78F00F99151 /* ListOfExercisesUseCaseTests.swift */,
+				5294CDC02905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift */,
 			);
 			path = UseCasesTests;
 			sourceTree = "<group>";
@@ -759,6 +762,7 @@
 			files = (
 				522F87D22904B68200F99151 /* ExerciseRespositoryMock.swift in Sources */,
 				522F87CD2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift in Sources */,
+				5294CDC12905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift in Sources */,
 				522F87CF2904AA7C00F99151 /* ExerciseDataMocks.swift in Sources */,
 				522F87D52904B78F00F99151 /* ListOfExercisesUseCaseTests.swift in Sources */,
 				522F87C82904A52300F99151 /* ListOfExercisesViewModelTests.swift in Sources */,

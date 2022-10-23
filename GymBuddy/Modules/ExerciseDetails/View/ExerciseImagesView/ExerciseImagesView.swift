@@ -16,14 +16,14 @@ struct ExerciseImagesView: View {
     }
 
     var body: some View {
-            ScrollView(SwiftUI.Axis.Set.horizontal, showsIndicators: false) {
-                HStack(alignment: .center,spacing: 5) {
-                    ForEach(images) { image in
-                        ImageView(imageURL: image.url, placeholder: .workoutPlaceholder)
-                            .frame(width: 150, height: 150)
-                            .clipShape(RoundedRectangle(cornerRadius: imageCornerRadius))
-                    }
+        ScrollView(SwiftUI.Axis.Set.horizontal, showsIndicators: false) {
+            HStack(alignment: .center,spacing: 5) {
+                ForEach(images) { image in
+                    ImageView(imageURL: image.url, placeholder: .workoutPlaceholder)
+                        .frame(width: 150, height: 150)
+                        .clipShape(RoundedRectangle(cornerRadius: imageCornerRadius))
                 }
             }
+        }
     }
 }
