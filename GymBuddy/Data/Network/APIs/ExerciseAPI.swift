@@ -6,9 +6,16 @@
 //
 
 import Foundation
+import Alamofire
 import Combine
 
 class ExerciseAPI: ExerciseRequester {
+    var networkClient: NetworkClient
+
+    init(networkClient: NetworkClient = AF) {
+        self.networkClient = networkClient
+    }
+
     func getListOfExercises() -> AnyPublisher<ExercisesPageDTO, NetworkError> {
         makeRequest(with: ExerciseRequest.exercises)
     }
@@ -18,4 +25,4 @@ class ExerciseAPI: ExerciseRequester {
     }
 }
 
-extension ExerciseAPI: BaseAPI {}
+extension ExerciseAPI: BaseAPI { }

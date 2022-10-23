@@ -9,14 +9,18 @@ import Foundation
 import Combine
 import Alamofire
 
+protocol NetworkClient {
+    func request(_ convertible: URLRequestConvertible, interceptor: RequestInterceptor?) -> DataRequest
+}
 protocol BaseAPI {
+    var networkClient: NetworkClient { get set }
     func makeRequest<T: Decodable>(with request: BaseRequest) -> AnyPublisher<T, NetworkError>
 }
 
 extension BaseAPI {
     func makeRequest<T: Decodable>(with request: BaseRequest) -> AnyPublisher<T, NetworkError> {
         Future<T, NetworkError> { promise in
-            AF.request(request)
+            networkClient.request(request, interceptor: nil)
                 .validate()
                 .validate(contentType: [NetworkConstants.ContentType.json])
                 .responseDecodable(of: T.self) { response in
@@ -41,3 +45,5 @@ extension BaseAPI {
         .eraseToAnyPublisher()
     }
 }
+
+extension Session: NetworkClient {}
