@@ -66,6 +66,8 @@
 		5294CDBD2905CDDC002F6F24 /* ExerciseVariationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDBC2905CDDC002F6F24 /* ExerciseVariationsView.swift */; };
 		5294CDBF2905CE1E002F6F24 /* ExerciseVariationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */; };
 		5294CDC12905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDC02905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift */; };
+		5294CDC32905E3A0002F6F24 /* ExerciseDetailsUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDC22905E3A0002F6F24 /* ExerciseDetailsUseCaseMock.swift */; };
+		5294CDC62905E43E002F6F24 /* ExerciseDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDC52905E43E002F6F24 /* ExerciseDetailsViewModelTests.swift */; };
 		68600781D131C7FF99E1CCBE /* libPods-GymBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +144,8 @@
 		5294CDBC2905CDDC002F6F24 /* ExerciseVariationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationsView.swift; sourceTree = "<group>"; };
 		5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationItem.swift; sourceTree = "<group>"; };
 		5294CDC02905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsUseCaseTests.swift; sourceTree = "<group>"; };
+		5294CDC22905E3A0002F6F24 /* ExerciseDetailsUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsUseCaseMock.swift; sourceTree = "<group>"; };
+		5294CDC52905E43E002F6F24 /* ExerciseDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		589458FCC3E3F41FA4ADAFD5 /* Pods-GymBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddyTests.release.xcconfig"; path = "Target Support Files/Pods-GymBuddyTests/Pods-GymBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9D0CE24C5AF89098C960EA /* libPods-GymBuddyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -445,6 +449,7 @@
 				522F87C92904A57900F99151 /* Mocks */,
 				522F87D32904B77600F99151 /* UseCasesTests */,
 				522F87C62904A50900F99151 /* ListOfExercisesTests */,
+				5294CDC42905E430002F6F24 /* ExerciseDetailsTests */,
 			);
 			path = GymBuddyTests;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				522F87CC2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift */,
+				5294CDC22905E3A0002F6F24 /* ExerciseDetailsUseCaseMock.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -552,6 +558,14 @@
 				5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */,
 			);
 			path = ExerciseVariationsView;
+			sourceTree = "<group>";
+		};
+		5294CDC42905E430002F6F24 /* ExerciseDetailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5294CDC52905E43E002F6F24 /* ExerciseDetailsViewModelTests.swift */,
+			);
+			path = ExerciseDetailsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -761,7 +775,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				522F87D22904B68200F99151 /* ExerciseRespositoryMock.swift in Sources */,
+				5294CDC32905E3A0002F6F24 /* ExerciseDetailsUseCaseMock.swift in Sources */,
 				522F87CD2904A5BA00F99151 /* ListOfExercisesUseCaseMock.swift in Sources */,
+				5294CDC62905E43E002F6F24 /* ExerciseDetailsViewModelTests.swift in Sources */,
 				5294CDC12905E1F8002F6F24 /* ExerciseDetailsUseCaseTests.swift in Sources */,
 				522F87CF2904AA7C00F99151 /* ExerciseDataMocks.swift in Sources */,
 				522F87D52904B78F00F99151 /* ListOfExercisesUseCaseTests.swift in Sources */,
