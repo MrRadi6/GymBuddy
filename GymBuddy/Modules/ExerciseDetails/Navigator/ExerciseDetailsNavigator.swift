@@ -14,6 +14,7 @@ struct ExerciseDetailsNavigator {
         let useCase = ExerciseDetailsUseCase(respository: repository)
         let viewModel = ExerciseDetailsViewModel(useCase: useCase)
         let view = ExerciseDetailsView(viewModel: viewModel)
+        viewModel.exercideId = id
         return view
     }
 }

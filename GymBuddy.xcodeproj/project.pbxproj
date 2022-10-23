@@ -60,6 +60,11 @@
 		522F87E52904D37900F99151 /* ExerciseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87E42904D37900F99151 /* ExerciseDetailsView.swift */; };
 		522F87E72904D3A300F99151 /* ExerciseDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87E62904D3A300F99151 /* ExerciseDetailsNavigator.swift */; };
 		522F87E92904D4F000F99151 /* ExerciseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F87E82904D4F000F99151 /* ExerciseDetailsViewModel.swift */; };
+		5294CDB52905B8C6002F6F24 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDB42905B8C6002F6F24 /* ImageView.swift */; };
+		5294CDB82905C497002F6F24 /* ExerciseImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDB72905C497002F6F24 /* ExerciseImagesView.swift */; };
+		5294CDBA2905C4D0002F6F24 /* ExerciseImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDB92905C4D0002F6F24 /* ExerciseImageItem.swift */; };
+		5294CDBD2905CDDC002F6F24 /* ExerciseVariationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDBC2905CDDC002F6F24 /* ExerciseVariationsView.swift */; };
+		5294CDBF2905CE1E002F6F24 /* ExerciseVariationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */; };
 		68600781D131C7FF99E1CCBE /* libPods-GymBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +135,11 @@
 		522F87E42904D37900F99151 /* ExerciseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsView.swift; sourceTree = "<group>"; };
 		522F87E62904D3A300F99151 /* ExerciseDetailsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsNavigator.swift; sourceTree = "<group>"; };
 		522F87E82904D4F000F99151 /* ExerciseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewModel.swift; sourceTree = "<group>"; };
+		5294CDB42905B8C6002F6F24 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		5294CDB72905C497002F6F24 /* ExerciseImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImagesView.swift; sourceTree = "<group>"; };
+		5294CDB92905C4D0002F6F24 /* ExerciseImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseImageItem.swift; sourceTree = "<group>"; };
+		5294CDBC2905CDDC002F6F24 /* ExerciseVariationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationsView.swift; sourceTree = "<group>"; };
+		5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationItem.swift; sourceTree = "<group>"; };
 		589458FCC3E3F41FA4ADAFD5 /* Pods-GymBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymBuddyTests.release.xcconfig"; path = "Target Support Files/Pods-GymBuddyTests/Pods-GymBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A973126C3F0ED64776127DDC /* libPods-GymBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9D0CE24C5AF89098C960EA /* libPods-GymBuddyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GymBuddyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -404,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				522F87A5290386D700F99151 /* LoadingView.swift */,
+				5294CDB42905B8C6002F6F24 /* ImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -499,6 +510,8 @@
 		522F87E12904D35000F99151 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5294CDB62905C491002F6F24 /* ExerciseImagesView */,
+				5294CDBB2905C5FD002F6F24 /* ExerciseVariationsView */,
 				522F87E42904D37900F99151 /* ExerciseDetailsView.swift */,
 			);
 			path = View;
@@ -518,6 +531,24 @@
 				522F87E62904D3A300F99151 /* ExerciseDetailsNavigator.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		5294CDB62905C491002F6F24 /* ExerciseImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				5294CDB72905C497002F6F24 /* ExerciseImagesView.swift */,
+				5294CDB92905C4D0002F6F24 /* ExerciseImageItem.swift */,
+			);
+			path = ExerciseImagesView;
+			sourceTree = "<group>";
+		};
+		5294CDBB2905C5FD002F6F24 /* ExerciseVariationsView */ = {
+			isa = PBXGroup;
+			children = (
+				5294CDBC2905CDDC002F6F24 /* ExerciseVariationsView.swift */,
+				5294CDBE2905CE1E002F6F24 /* ExerciseVariationItem.swift */,
+			);
+			path = ExerciseVariationsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,10 +712,14 @@
 				522D0FB8290188C600A52D85 /* ListOfExercisesViewController.swift in Sources */,
 				522F87742901C81200F99151 /* String+Extension.swift in Sources */,
 				522F87AD29039DFB00F99151 /* BaseViewController.swift in Sources */,
+				5294CDBA2905C4D0002F6F24 /* ExerciseImageItem.swift in Sources */,
 				522F877629032BAE00F99151 /* ExerciseAPI.swift in Sources */,
 				522F87A6290386D700F99151 /* LoadingView.swift in Sources */,
+				5294CDB82905C497002F6F24 /* ExerciseImagesView.swift in Sources */,
 				522F87A32903868200F99151 /* BaseViewModel.swift in Sources */,
+				5294CDBD2905CDDC002F6F24 /* ExerciseVariationsView.swift in Sources */,
 				522D0FB4290188C600A52D85 /* AppDelegate.swift in Sources */,
+				5294CDB52905B8C6002F6F24 /* ImageView.swift in Sources */,
 				522F878B290359DB00F99151 /* AppError.swift in Sources */,
 				522F87DC2904C4BC00F99151 /* ExerciseDetails.swift in Sources */,
 				522F87992903801300F99151 /* UIViewController+Extension.swift in Sources */,
@@ -707,6 +742,7 @@
 				522D0FB6290188C600A52D85 /* SceneDelegate.swift in Sources */,
 				522F876A2901C01300F99151 /* ExerciseRequest.swift in Sources */,
 				522F87702901C56000F99151 /* NetworkError.swift in Sources */,
+				5294CDBF2905CE1E002F6F24 /* ExerciseVariationItem.swift in Sources */,
 				522F87E92904D4F000F99151 /* ExerciseDetailsViewModel.swift in Sources */,
 				522F8786290357D000F99151 /* ListOfExercisesUseCase.swift in Sources */,
 				522F87DA2904C44100F99151 /* ExerciseDetailsDTO.swift in Sources */,
