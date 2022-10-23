@@ -32,8 +32,7 @@ struct ExerciseDetailsView: View {
                 LoadingView(isLoading: $viewModel.isLoading)
             }
         }
-
-        .navigationBarTitleDisplayMode(.inline)
+//        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             viewModel.loadExerciseDetails()
         }
