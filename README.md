@@ -15,4 +15,5 @@ MVVM clean architecture is used to architect and structured the project as the f
 - Data layer contain repositories and network
 
 Please refer to this [link](https://wger.de/de/software/api) for api documentation
+
 For more information about mvvm clean architecture please check this [link](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3)
