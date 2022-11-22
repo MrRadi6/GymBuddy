@@ -4,7 +4,7 @@
 ## iOS application build using both UIKit and SwiftUI, and swift combine for data binding
 
 ## Installation and Usage
-- Clone the project using ```git clone https://github.com/```
+- Clone the project using ```git clone git@github.com:MrRadi6/GymBuddy.git```
 - Install third party libraries using ```pod install```
 - Open GymBuddy.xcworkspace
 
